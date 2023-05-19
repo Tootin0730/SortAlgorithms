@@ -4,19 +4,22 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int[] intArray = { 20, 35, -15, 7, 55, 1, -22 };
+        int[] intArray = {20, 35, -15, 7, 55, 1, -22};
 
-        for (int firstUnsortedIndex = 1; firstUnsortedIndex < intArray.length;
-             firstUnsortedIndex++) {
-            int newElement = intArray[firstUnsortedIndex];
+        for (int gap = intArray.length / 2; gap > 0; gap /= 2) {
 
-            int i;
+            for (int i = gap; i < intArray.length; i++) {
+                int newElement = intArray[i];
 
-            for (i = firstUnsortedIndex; i > 0 && intArray[i - 1] > newElement; i--) {
-                intArray[i] = intArray[i - 1];
+                int j = i;
+
+                while (j >= gap && intArray[j - gap] > newElement) {
+                    intArray[j] = intArray[j - gap];
+                    j -= gap;
+                }
+
+                intArray[j] = newElement;
             }
-
-            intArray[i] = newElement;
         }
 
         for (int i = 0; i < intArray.length; i++) {

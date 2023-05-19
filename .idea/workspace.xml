@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="324c7852-5fba-4563-9179-4c2dfce2c57f" name="Changes" comment="Sort Algorithm by Selection Sort">
-      <change afterPath="$PROJECT_DIR$/src/academy/learnprogramming/sortalgorithms/Main.java" afterDir="false" />
+    <list default="true" id="324c7852-5fba-4563-9179-4c2dfce2c57f" name="Changes" comment="Sort Algorithm by Insertion Sort">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/academy/learnprogramming/sortalgorithms/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/academy/learnprogramming/sortalgorithms/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,12 +84,20 @@
       <option name="project" value="LOCAL" />
       <updated>1684288415173</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Sort Algorithm by Insertion Sort">
+      <created>1684374597288</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1684374597288</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Sort Algorithm by Bubble Sort" />
     <MESSAGE value="Sort Algorithm by Selection Sort" />
-    <option name="LAST_COMMIT_MESSAGE" value="Sort Algorithm by Selection Sort" />
+    <MESSAGE value="Sort Algorithm by Insertion Sort" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sort Algorithm by Insertion Sort" />
   </component>
 </project>
