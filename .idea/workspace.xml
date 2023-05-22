@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="324c7852-5fba-4563-9179-4c2dfce2c57f" name="Changes" comment="Sort Algorithm by the Shell Sort">
+    <list default="true" id="324c7852-5fba-4563-9179-4c2dfce2c57f" name="Changes" comment="Recursion">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/academy/learnprogramming/sortalgorithms/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/academy/learnprogramming/sortalgorithms/Main.java" afterDir="false" />
     </list>
@@ -98,14 +98,33 @@
       <option name="project" value="LOCAL" />
       <updated>1684456234459</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Recursion">
+      <created>1684569264481</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1684569264481</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Sort Algorithm by Bubble Sort" />
     <MESSAGE value="Sort Algorithm by Selection Sort" />
     <MESSAGE value="Sort Algorithm by Insertion Sort" />
     <MESSAGE value="Sort Algorithm by the Shell Sort" />
-    <option name="LAST_COMMIT_MESSAGE" value="Sort Algorithm by the Shell Sort" />
+    <MESSAGE value="Recursion" />
+    <option name="LAST_COMMIT_MESSAGE" value="Recursion" />
   </component>
 </project>

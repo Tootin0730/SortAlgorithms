@@ -2,32 +2,35 @@ package academy.learnprogramming.sortalgorithms;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(iterativeFactorial(3));
-        System.out.println(recursiveFactorial(3));
+        int[] intArray = { 20, 35, -15, 7, 55, 1, -22 };
+        mergeSort(intArray, 0, intArray.length);
+        for (int i = 0; i < intArray.length; i++) {
+            System.out.println(intArray[i]);
+        }
     }
 
-    // 1! = 1 * 0! = 1
-    // 2! = 2 * 1 = 2 * 1!
-    // 3! = 3 * 2 * 1 = 3 * 2!
-    // 4! = 4 * 3 * 2 * 1 = 4 * 3!
-
-    // n! = n *(n - 1)!
-
-    public static int recursiveFactorial(int num) {
-        if (num == 0) {
-            return 1;
+    public static void mergeSort(int[] input, int start, int end) {
+        if (end - start < 2) {
+            return;
         }
-        return num * recursiveFactorial(num - 1);
+        int mid = (start + end) / 2;
+        mergeSort(input, start, mid);
+        mergeSort(input, mid, end);
+        merge(input, start, mid, end);
     }
 
-    public static int iterativeFactorial(int num) {
-        if (num == 0) {
-            return 1;
+    public static void merge(int[] input, int start, int mid, int end) {
+        if (input[mid - 1] <= input[mid]) {
+            return;
         }
-        int factorial = 1;
-        for (int i = 1; i <= num; i++) {
-            factorial *= i;
+        int i = start;
+        int j = mid;
+        int tempIndex = 0;
+        int[] temp = new int[end - start];
+        while (i < mid && j < end) {
+            temp[tempIndex++] = input[i] <= input[j] ? input[i++] : input[j++];
         }
-        return factorial;
+        System.arraycopy(input, i, input, start + tempIndex, mid - i);
+        System.arraycopy(temp, 0, input, start, tempIndex);
     }
 }
