@@ -3,43 +3,39 @@ package academy.learnprogramming.sortalgorithms;
 public class Main {
 
     public static void main(String[] args) {
-        int[] intArray = { 20, 35, -15, 7, 55, 1, -22 };
-        insertionSort(intArray, intArray.length);
-//        for (int firstUnsortedIndex = 1; firstUnsortedIndex < intArray.length;
-//             firstUnsortedIndex++) {
-//            int newElement = intArray[firstUnsortedIndex];
-//
-//            int i;
-//
-//            for (i = firstUnsortedIndex; i > 0 && intArray[i - 1] > newElement; i--) {
-//                intArray[i] = intArray[i - 1];
-//            }
-//
-//            intArray[i] = newElement;
-//        }
-        for (int i = 0; i < intArray.length; i++) {
-            System.out.println(intArray[i]);
+        String[] stringsArray = { "bcdef", "dbaqc", "abcde", "omadd", "bbbbb" };
+        radixSort(stringsArray, 26, 5);
+        for (int i = 0; i < stringsArray.length; i++) {
+            System.out.println(stringsArray[i]);
         }
     }
 
-    public static void insertionSort(int[] input, int numItems) {
+    public static void radixSort(String[] input, int radix, int width) {
+        for (int i = width-1; i >= 0; i--) {
+            radixSingleSort(input, i, radix);
+        }
+    }
 
-        if (numItems < 2) {
-            return;
+    public static void radixSingleSort(String[] input, int position, int radix) {
+        int numItems = input.length;
+        int[] countArray = new int[radix];
+        for (String value: input) {
+            countArray[getIndex(position, value)]++;
         }
-        insertionSort(input, numItems - 1);
-        int newElement = input[numItems - 1];
-        int i;
-        for (i = numItems - 1; i > 0 && input[i - 1] > newElement; i--) {
-            input[i] = input[i - 1];
+        //Adjust the count array
+        for (int j = 1; j < radix; j++) {
+            countArray[j] += countArray[j - 1];
         }
-        input[i] = newElement;
-        System.out.println("Result of call when numItems = " + numItems);
-        for (i = 0; i < input.length; i++) {
-            System.out.print(input[i]);
-            System.out.print(", ");
+        String[] temp = new String[numItems];
+        for (int tempIndex = numItems - 1; tempIndex >= 0; tempIndex--) {
+            temp[--countArray[getIndex(position, input[tempIndex])]] =
+                    input[tempIndex];
         }
-        System.out.println("");
-        System.out.println("---------------------");
+        for (int tempIndex = 0; tempIndex < numItems; tempIndex++) {
+            input[tempIndex] = temp[tempIndex];
+        }
+    }
+    public static int getIndex(int position, String value) {
+        return value.charAt(position) - 'a';
     }
 }

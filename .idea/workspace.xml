@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="324c7852-5fba-4563-9179-4c2dfce2c57f" name="Changes" comment="Sorting Algorithm challenge #1 (merge sorting)">
+    <list default="true" id="324c7852-5fba-4563-9179-4c2dfce2c57f" name="Changes" comment="Sorting Algorithm challenge #2 (recursion)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/academy/learnprogramming/sortalgorithms/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/academy/learnprogramming/sortalgorithms/Main.java" afterDir="false" />
     </list>
@@ -178,7 +178,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685074158619</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Sorting Algorithm challenge #2 (recursion)">
+      <created>1685146207128</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1685146207128</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -203,6 +210,7 @@
     <MESSAGE value="Radix Sort" />
     <MESSAGE value="Sorting Arrays using the JDK" />
     <MESSAGE value="Sorting Algorithm challenge #1 (merge sorting)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Sorting Algorithm challenge #1 (merge sorting)" />
+    <MESSAGE value="Sorting Algorithm challenge #2 (recursion)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sorting Algorithm challenge #2 (recursion)" />
   </component>
 </project>
